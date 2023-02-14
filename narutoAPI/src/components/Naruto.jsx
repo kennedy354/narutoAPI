@@ -21,18 +21,16 @@ function Naruto(){
     return(
         <>
         <div key="tururu">
-            <Outlet />
+            
         </div>
         <div className="todos">
 
             {naruto.map((personagens, key) => (
-                <>
                     <div className="personagem" key={key}>
-                        <div className="nomePersonagem"><Link to="/naruto/teste" state={{key}}><div className="nomeInterior">{personagens.name.replace('_', ' ')}</div></Link></div>
+                        <div className="nomePersonagem"><Link to={`/naruto/${key}`} state={{key}}><div className="nomeInterior">{personagens.name.replace('_', ' ')}</div></Link></div>
                         <div className="imagemPersonagem"><img className="imagemInterior" src={personagens.images[0] || personagens.images[1]}></img></div>
                         <div className="vilaPersonagem"><div className="vilaInterior">{personagens.info.Afiliação.replace(' (Apenas Anime)', '')}</div></div>
                     </div>
-                </>
             ))}
             
         </div>

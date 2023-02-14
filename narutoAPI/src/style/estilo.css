@@ -1,8 +1,12 @@
     /*A classe "paginaInteira" tá no "App.jsx" na linha 11*/
 
     .paginaInteira{
-        background-Color: #ffc982;
+        background-Color: #c58918;
         text-align: center;
+    }
+
+    a {
+        text-decoration: none !important;
     }
 
     .menu{
@@ -27,12 +31,13 @@
     }
 
     .personagem {
-        border:3px solid;
-        border-color: #0c2fdf;
+      
         border-radius: 20px;
         background-Color: #f2a30b;
         width: 250px;
         height: 250px;
+        border:3px solid;
+        border-color: #000000;
     }
 
     .nomePersonagem {
@@ -68,6 +73,7 @@
     }
 
     .imagemInterior {
+        border:  10px;
         border-radius: 20px;
         max-width: 240px;
         max-height: 160px;
@@ -75,6 +81,9 @@
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+
+        border:3px solid;
+        border-color: #000000;
     }
 
     .vilaInterior {

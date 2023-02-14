@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Outlet } from "react-router-dom"
 import HomePage from "./Pages/HomePage"
 import Naruto from './components/Naruto'
 import Info from './Pages/infoPersonagem'
@@ -19,8 +19,11 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage></HomePage>}>
         <Route index element={<span className='bemVindo'>Bem vindo</span>}></Route>
-        <Route path="naruto" element={<Naruto/>} />
-        <Route path="naruto/teste" element={<Info></Info>}></Route>
+        <Route path="naruto" element={<Outlet/>} >
+          <Route index element={<Naruto/>}/>
+          <Route path=":key" element={<Info></Info>}></Route>
+        </Route>
+        
       </Route>
     </Routes>
 
