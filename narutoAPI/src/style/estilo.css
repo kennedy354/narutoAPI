@@ -1,0 +1,92 @@
+    /*A classe "paginaInteira" tá no "App.jsx" na linha 11*/
+
+    .paginaInteira{
+        background-Color: #ffc982;
+        text-align: center;
+    }
+
+    .menu{
+        font-family: Arial;
+        font-size: 20px;  
+    }
+    .titulo{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .bemVindo{
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .todos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 50px;
+    }
+
+    .personagem {
+        border:3px solid;
+        border-color: #0c2fdf;
+        border-radius: 20px;
+        background-Color: #f2a30b;
+        width: 250px;
+        height: 250px;
+    }
+
+    .nomePersonagem {
+        border-radius: 17px 17px 0px 0px;
+        width: 250px;
+        height: 40px;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+    .nomeInterior:link{
+        text-decoration: none;
+    }
+    .nomeInterior:visited{
+        text-decoration: none;
+    }
+
+    .imagemPersonagem {
+        width: 250px;
+        height: 170px;
+        text-align: center;
+    }   
+
+    .vilaPersonagem {
+        border-radius: 0px 0px 17px 17px;
+        width: 250px;
+        height: 40px;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .imagemInterior {
+        border-radius: 20px;
+        max-width: 240px;
+        max-height: 160px;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .vilaInterior {
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .nomeInterior {
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
